@@ -1,0 +1,73 @@
+/*Calculator CSS*/
+ 
+h1 {
+    text-align: center;
+    padding: 100px;
+   }
+   #calculator {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    margin:auto;
+    background-color: darkgray;
+    border: solid 5px #000;
+   }
+   #screen {
+    background-color: gray;
+    height: 100px;
+    width: 90%;
+    margin: 10px auto;
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   }
+   #numbers {
+    display: flex;
+    flex-wrap: wrap;
+   }
+   #operators{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   .number,.operators{
+    background-color: yellow;
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: right;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 3px 3px #888888;
+}
+   .number:active,.operators:active,.clearnumbers:active {
+    box-shadow: 0px 0px;
+   }
+   .clearnumbers{
+    background-color: rgb(255, 0, 0);
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 3px 3px #888888;
+   }
+   .operators{
+    background-color: rgb(0, 4, 255);
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 3px 3px #888888;
+    flex-direction: row;
+   }
